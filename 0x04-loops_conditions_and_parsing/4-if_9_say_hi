@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Displays "Best School" 10 times, but says "Hi" on the 9th iteration.
+
+COUNTER=0
+while [ "$COUNTER" -lt 11 ]; do
+    if [ "$COUNTER" -eq 9 ]; then
+        echo "Hi"
+    else
+        echo "Best School"
+    fi
+    ((COUNTER++))
+done
+
+# Exit the script after the loop completes
+exit 0
