@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Displays "Best School" 10 times, but has special messages on the 4th and 8th iterations.
+
+COUNTER=1
+while [ "$COUNTER" -lt 11 ]; do
+    if [ "$COUNTER" -eq 4 ]; then
+        echo "bad luck"
+    elif [ "$COUNTER" -eq 8 ]; then
+        echo "good luck"
+    else
+        echo "Best School"
+    fi
+    ((COUNTER++))
+done
+
+# Exit the script after the loop completes
+exit 0
